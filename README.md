@@ -74,21 +74,21 @@ Pour faciliter votre passage devant le jury, déposez sur la plateforme, dans un
 ##  Soutenance (30 min)
 Durant la présentation orale, l’évaluateur interprétera le rôle de Corinne. La soutenance est structurée de la manière suivante :
 - Présentation des livrables (15 minutes) 
-Pendant 10 à 12 minutes, vous allez devoir présenter le site web dans lequel vous avez intégré les éléments dynamiques, ainsi que le code JavaScript réalisé.
-Puis, pendant 3 à 5 minutes, vous devrez présenter le plan de test mis en place.
+    Pendant 10 à 12 minutes, vous allez devoir présenter le site web dans lequel vous avez intégré les éléments dynamiques, ainsi que le code JavaScript réalisé.
+    Puis, pendant 3 à 5 minutes, vous devrez présenter le plan de test mis en place.
 - Discussion (10 min) 
-L’évaluateur, qui pour rappel jouera le rôle de Corinne, vous challengera sur les différents points techniques du projet. Par exemple (mais pas uniquement) :
-l’utilisation de l’API (GET, POST) ;
-le DOM (ajout, suppression et modification d’éléments) ;
-l’utilisation de URLSearchParams ;
-l’utilisation de localStorage.
-Débriefing (5 minutes)
+    L’évaluateur, qui pour rappel jouera le rôle de Corinne, vous challengera sur les différents points techniques du projet. Par exemple (mais pas uniquement) :
+    - l’utilisation de l’API (GET, POST) ;
+    - le DOM (ajout, suppression et modification d’éléments) ;
+    - l’utilisation de URLSearchParams ;
+    - l’utilisation de localStorage.
+-Débriefing (5 minutes)
 
 À la fin de la soutenance, l'évaluateur arrêtera de jouer le rôle de Corinne pour vous permettre de débriefer ensemble.
 Votre présentation devrait durer 15 minutes (+/- 5 minutes).  Puisque le respect de la durée des présentations est important en milieu professionnel, les présentations en dessous de 10 minutes ou au-dessus de 20 minutes peuvent être refusées. 
 
 ## Compétences évaluées
-Interagir avec un web service avec JavaScript
-Gérer des événements JavaScript
-Valider des données issues de sources externes
-Créer un plan de test pour une application
+- Interagir avec un web service avec JavaScript
+- Gérer des événements JavaScript
+- Valider des données issues de sources externes
+- Créer un plan de test pour une application
