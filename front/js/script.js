@@ -30,7 +30,7 @@ async function fillSection() {
             productImg.src = resultatAPI[article].imageUrl;
             productImg.alt = resultatAPI[article].altTxt;
 
-            // Insertion du titre "h3"
+            // Insertion du nom du porduit "h3"
             let productName = document.createElement("h3");
             productArticle.appendChild(productName);
             productName.classList.add("productName");

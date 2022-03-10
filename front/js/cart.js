@@ -37,7 +37,7 @@ for (let produit in produitLocalStorage){
     productItemContent.appendChild(productItemContentTitlePrice);
     productItemContentTitlePrice.className = "cart__item__content__titlePrice";
     
-    // Insertion du titre h3
+    // Insertion du nom du produit "h3"
     let productTitle = document.createElement("h2");
     productItemContentTitlePrice.appendChild(productTitle);
     productTitle.innerHTML = produitLocalStorage[produit].nomProduit;
