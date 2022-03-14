@@ -3,6 +3,17 @@ let produitLocalStorage = JSON.parse(localStorage.getItem("produit"));
 console.table(produitLocalStorage);
 const positionEmptyCart = document.querySelector("#cart__items");
 
+if (localStorage.getItem('orderId') != null) {
+    document.getElementById('orderId').innerHTML = `<p>`+ localStorage.getItem('orderId')
+    localStorage.clear()
+}
+// Bouton commander
+const btn_commander = document.getElementById("order");
+
+// Fontion pour commander
+btn_commander.addEventListener('click',postForm);
+
+
 // Si le panier est vide
 function getCart(){
 if (produitLocalStorage === null || produitLocalStorage == 0) {
@@ -264,11 +275,7 @@ getForm();
 
 //Envoi des informations client au localstorage
 function postForm(){
-    const btn_commander = document.getElementById("order");
 
-    //Ecouter le panier
-    btn_commander.addEventListener("click", (event)=>{
-    
         //Récupération des coordonnées du formulaire client
         let inputName = document.getElementById('firstName');
         let inputLastName = document.getElementById('lastName');
@@ -315,6 +322,4 @@ function postForm(){
         .catch((err) => {
             alert ("Problème avec fetch : " + err.message);
         });
-        })
 }
-postForm();
