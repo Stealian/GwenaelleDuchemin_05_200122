@@ -124,7 +124,7 @@ getTotals();
 function modifyQtt() {
     let qttModif = document.querySelectorAll(".itemQuantity");
 
-    for (let k = 0; k < qttModif.length; k++){
+    for (let k = 0; k < qttModif.length; k++) {
         qttModif[k].addEventListener("change" , (event) => {
             event.preventDefault();
 
@@ -185,22 +185,22 @@ function getForm() {
         validFirstName(this);
     });
 
-    // Ecoute de la modification du prénom
+    // Ecoute de la modification du nom
     form.lastName.addEventListener('change', function() {
         validLastName(this);
     });
 
-    // Ecoute de la modification du prénom
+    // Ecoute de la modification de l'adresse
     form.address.addEventListener('change', function() {
         validAddress(this);
     });
 
-    // Ecoute de la modification du prénom
+    // Ecoute de la modification de la ville
     form.city.addEventListener('change', function() {
         validCity(this);
     });
 
-    // Ecoute de la modification du prénom
+    // Ecoute de la modification de l'email
     form.email.addEventListener('change', function() {
         validEmail(this);
     });
@@ -285,11 +285,11 @@ function postForm(){
 
         const order = {
             contact : {
-                firstName: inputName.value,
-                lastName: inputLastName.value,
-                address: inputAdress.value,
-                city: inputCity.value,
-                email: inputMail.value,
+                'firstName': inputName.value,
+                'lastName': inputLastName.value,
+                'address': inputAdress.value,
+                'city': inputCity.value,
+                'email': inputMail.value,
             },
             products: idProducts,
         } 
@@ -298,7 +298,7 @@ function postForm(){
             method: 'POST',
             body: JSON.stringify(order),
             headers: {
-                'Accept': 'application/json', 
+                Accept: 'application/json', 
                 "Content-Type": "application/json" 
             },
         };

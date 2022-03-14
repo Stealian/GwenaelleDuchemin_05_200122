@@ -29,6 +29,7 @@ function getArticle() {
     })
 }
     
+// Insertion des éléments
 function getPost(article){
     // Insertion de l'image
     let productImg = document.createElement("img");
